@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп «Бородинский»</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -49,6 +53,7 @@
             </li>
         </ul>
     </section>
+    <div class="index-column">
     <section class="news">
         <h2>Новости</h2>
         <ul class="news-list">
@@ -74,12 +79,13 @@
         <button class="button gallery-button gallery-button-back" type="button">Назад</button>
         <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
     </section>
-
+        </div>
+    <div class="index-column">
     <section class="contacts">
         <h2>Контактная информация</h2>
         <p>Барбершоп «Бородинский» <br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
-        Телефон: +7 (812) 666-02-66
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+            Телефон: +7 (812) 666-02-66
         </p>
         <p>
             Время работы: <br>
@@ -113,27 +119,29 @@
             <button class="button" type="button">Отправить</button>
         </form>
     </section>
+        </div>
 </main>
 
 <footer class="main-footer">
     <p class="footer-contacts">
         Барбершопа «Бородинский» <br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+        <a href="#">Как нас найти?</a> <br>
         Телефон: +7 (812) 666-02-66
     </p>
 
     <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-        <li class="social-button">
-            <a href="#">Вконтакте</a>
-        </li>
-        <li class="social-button">
-            <a href="#">Фесбук</a>
-        </li>
-        <li class="social-button">
-            <a href="#">Инстаграм</a>
-        </li>
+            <li class="social-button">
+                <a href="#">Вконтакте</a>
+            </li>
+            <li class="social-button">
+                <a href="#">Фесбук</a>
+            </li>
+            <li class="social-button">
+                <a href="#">Инстаграм</a>
+            </li>
         </ul>
     </div>
 
@@ -143,35 +151,36 @@
     </p>
 </footer>
 
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label class="visually-hidden" for="user-login"></label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="user-password"></label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="login-password-info">
-                <label class="checkbox">
-                    <input type="checkbox" name="remember">
-                    Запомните меня</label>
-            </p>
-            <button class="button" type="submit">Войти</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
-
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-            <img src="img/map.png" width="766" height="560" alt="Офис компании по адресу ул. Большая конюшенная 19/8, Санкт-Петербург">
+            <label class="visually-hidden" for="user-login"></label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
         </p>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
+        <p>
+            <label class="visually-hidden" for="user-password"></label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+            <label class="checkbox">
+                <input type="checkbox" name="remember">
+                Запомните меня</label>
+        </p>
+        <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+        <img src="img/map.png" width="766" height="560"
+             alt="Офис компании по адресу ул. Большая конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
 
 </body>
 </html>
