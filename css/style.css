@@ -379,10 +379,32 @@ img {
 }
 
 .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
     list-style: none;
+}
+
+.breadcrumbs li {
+    margin-right: 40px;
+}
+
+.breadcrumbs li:first-child {
+    position: relative;
+}
+
+
+.breadcrumbs li:first-child a::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -26px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
 }
 
 .breadcrumbs a {
@@ -556,16 +578,40 @@ img {
 }
 
 .slogan {
+    position: relative;
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     font-size: 48px;
     line-height: 48px;
     text-align: center;
 }
 
+.slogan::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 160px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.slogan::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 24px;
+    width: 160px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.inner-columns {
+    margin-bottom: 65px;
+}
+
 .manufacturers {
     width: 240px;
-    margin-bottom: 65px;
 }
 
 .manufacturers h2 {
@@ -582,6 +628,27 @@ img {
     list-style: none;
 }
 
+.manufactures-list .manufacturers-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 23px;
+}
+
+.manufactures-list .manufacturers-item:last-child {
+    margin-bottom: 0;
+}
+
+.manufactures-list .manufacturers-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
 .price {
     width: 460px;
 }
@@ -593,6 +660,27 @@ img {
     margin-bottom: 35px;
     font-size: 24px;
     line-height: 30px;
+}
+
+.price-list {
+    width: 460px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.price-list td {
+   width: 230px;
+   border: 2px solid #000000;
+}
+
+.price-list tr td:first-child {
+    padding-left: 17px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+}
+
+.price-list tr td:nth-child(2) {
+    text-align: center;
 }
 
 .about-us h2 {
@@ -701,10 +789,11 @@ img {
 .social-button:active path {
     fill: #000000;
     transition: 1s all;
+    transform: rotate(360deg);
+    transform-origin: center;
 }
 
 .social-button svg {
-    /*margin-top: 5px;*/
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -731,6 +820,7 @@ img {
     color: #000000;
     background-color: #ffffff;
     transition: 1s all;
+    transform: scale(1.1);
 }
 
 .footer-copyright b {
