@@ -391,12 +391,12 @@ img {
     margin-right: 40px;
 }
 
-.breadcrumbs li:first-child {
+.breadcrumbs li {
     position: relative;
 }
 
 
-.breadcrumbs li:first-child a::after {
+.breadcrumbs li a::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -542,26 +542,77 @@ img {
 }
 
 .product-photo-preview {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.product-photo-preview li {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+.product-photo-preview li img {
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
+.product-photo-full img:hover,
+.product-photo-preview li img:hover {
+    box-shadow: 3px 4px 25px rgba(0, 1, 1, 0.3);
+}
+
+
 .product-photo-full {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.product-photo-full img {
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.text-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.product-availability {
+    margin: 0;
 }
 
 .product-article {
+    margin: 0;
     text-align: right;
     color: #aeaeae;
 }
 
+.product-text {
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.product-text a {
+    text-decoration: underline;
+    color: #000000;
+    text-decoration-color: #000000;
+}
+
+.product-price {
+    display: flex;
+    margin: 0;
+    margin-bottom: 65px;
+}
+
 .product-price b {
-    line-height: 20px;
+    padding: 10px 37px;
+    width: 114px;
     text-align: center;
     background-color: #e5e5e5;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+.product-price .button {
+    padding: 10px 19px;
 }
 
 .product-info {
@@ -569,12 +620,32 @@ img {
 }
 
 .product-info h3 {
+    margin: 0;
+    margin-bottom: 35px;
     font-size: 24px;
     line-height: 30px;
 }
 
 .product-info ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.product-info ul li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.product-info ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
 }
 
 .slogan {
@@ -669,8 +740,8 @@ img {
 }
 
 .price-list td {
-   width: 230px;
-   border: 2px solid #000000;
+    width: 230px;
+    border: 2px solid #000000;
 }
 
 .price-list tr td:first-child {
