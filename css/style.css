@@ -7,7 +7,7 @@ body {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-color: #000000;
     background-position: top center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 .inner-page {
     color: #000000;
     background-color: #f9f6f3;
-    background-image: url("/img/patternt-light.jpg");
+    background-image: url("../img/patternt-light.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 }
