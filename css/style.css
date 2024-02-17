@@ -114,6 +114,7 @@ img {
 
 .main-navigation-wrapper {
     width: 100%;
+    min-height: 70px;
     margin-bottom: 60px;
     background-color: #000000;
 }
@@ -738,144 +739,141 @@ img {
     transform: rotate(45deg);
 }
 
-.slogan {
-    position: relative;
-    display: block;
-    margin-bottom: 70px;
+
+
+.contact-info ul {
+    list-style: none;
+}
+
+.inner-content {
+    margin-bottom: 75px;
+}
+
+.inner-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.inner-content p {
+    margin: 14px 0;
+}
+
+.inner-content h2 + h3 {
+    margin-top: 30px;
+}
+
+.inner-content table {
+    border-collapse: collapse;
+}
+
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+}
+
+.inner-content .big-heading {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 65px;
     font-size: 48px;
     line-height: 48px;
     text-align: center;
 }
 
-.slogan::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 24px;
-    width: 160px;
+.big-heading::before,
+.big-heading::after {
+    content: '';
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50px;
     height: 2px;
     background-color: #000000;
 }
 
-.slogan::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 24px;
-    width: 160px;
-    height: 2px;
-    background-color: #000000;
+.big-heading::before {
+    margin-right: 25px;
 }
 
-.inner-columns {
-    margin-bottom: 65px;
+.big-heading::after {
+    margin-left: 25px;
 }
 
-.manufacturers {
-    width: 240px;
-}
-
-.manufacturers h2 {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 35px;
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.manufactures-list {
-    margin: 0;
+.custom-list-1 {
+    margin: 14px 0;
     padding: 0;
     list-style: none;
 }
 
-.manufactures-list .manufacturers-item {
+.custom-list-1 li {
     position: relative;
+    margin-bottom: 15px;
     padding-left: 20px;
-    margin-bottom: 23px;
 }
 
-.manufactures-list .manufacturers-item:last-child {
-    margin-bottom: 0;
-}
-
-.manufactures-list .manufacturers-item::before {
-    content: "";
+.custom-list-1 li::before {
+    content: '';
     position: absolute;
     top: 8px;
-    left: 1px;
+    left: 0;
     width: 8px;
     height: 8px;
     background-color: #000000;
     transform: rotate(45deg);
 }
 
-.price {
-    width: 460px;
+.custom-table-1 {
+    width: 100%;
 }
 
-.price h2 {
-    width: 180px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 35px;
-    font-size: 24px;
-    line-height: 30px;
+.custom-table-1 td {
+    width: 50%;
 }
 
-.price-list {
-    width: 460px;
-    border: 2px solid #000000;
-    border-collapse: collapse;
-}
-
-.price-list td {
-    width: 230px;
-    border: 2px solid #000000;
-}
-
-.price-list tr td:first-child {
-    padding-left: 17px;
-    padding-top: 14px;
-    padding-bottom: 15px;
-}
-
-.price-list tr td:nth-child(2) {
+.custom-table-1 td:last-child {
     text-align: center;
 }
 
-.about-us h2 {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 35px;
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.about-us {
-    margin-bottom: 80px;
-}
-
-.about-us-list {
+.inner-column {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0;
 }
 
-.about-us-list .about-us-item:first-child {
-    width: 380px;
-    margin-right: 100px;
+.inner-column-left,
+.inner-column-right {
+    width: 460px;
 }
 
-.about-us-list .about-us-item:last-child {
-    width: 380px;
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+    margin-top: 0;
 }
 
-.contact-info ul {
-    list-style: none;
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+    margin-bottom: 0;
 }
 
+.inner-column > h2:first-child {
+    width: 460px;
+    margin-top: 0;
+    margin-right: 460px;
+}
+
+.short-text {
+    padding-right: 80px;
+}
 
 .main-footer {
     margin-top: 65px;
