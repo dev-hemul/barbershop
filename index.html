@@ -102,7 +102,7 @@
                 пн-пт: с 10:00 до 22:00 <br>
                 сб-вс: с 10:00 до 19:00
             </p>
-            <a class="button" href="map.html">Как проехать</a>
+            <a class="button contacts-button-map" href="map.html">Как проехать</a>
             <a class="button" href="contacts.html">Обратная связь</a>
         </section>
 
@@ -137,7 +137,7 @@
         <p class="footer-contacts">
             Барбершопа «Бородинский» <br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
-            <a class="map" href="#">Как нас найти?</a> <br>
+            <a class="map contacts-button-map-footer" href="#">Как нас найти?</a> <br>
             Телефон: +7 (812) 666-02-66
         </p>
 
@@ -181,7 +181,7 @@
     </div>
 </footer>
 
-<section class="modal modal-login">
+<section class="modal modal-login modal-error">
     <h2>Личный кабинет</h2>
     <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -214,30 +214,6 @@
     </p>
     <button class="modal-close" type="button">Закрыть</button>
 </section>
-<script>
-  let link = document.querySelector(".login-link");
-  let modallogin = document.querySelector(".modal-login");
-  let map = document.querySelector(".map");
-  let modalmap = document.querySelector(".modal-map");
-  let modalclose = document.querySelector(".modal-close");
-
-  map.addEventListener("click", function (evt) {
-    evt.preventDefault()
-    modalmap.style.display = 'block';
-  })
-
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault()
-    modallogin.style.display = 'block';
-  })
-
-  modalclose.addEventListener("click", function () {
-    modallogin.style.display = 'none';
-  })
-
-  modalclose.addEventListener("click", function () {
-    modalmap.style.display = 'none';
-  })
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
