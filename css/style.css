@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 1200px;
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -234,8 +235,8 @@ img {
     margin-bottom: 35px;
     color: #000000;
     background-color: #f8f5f2;
-    background-image: url("/img/separation.png"),
-    url("/img/patternt-light.jpg");
+    background-image: url("../img/separation.png"),
+    url("../img/patternt-light.jpg");
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
@@ -880,7 +881,7 @@ img {
     padding: 60px 0;
     color: #ffffff;
     background-color: #212121;
-    background-image: url("/img/pattern-dark.jpg");
+    background-image: url("../img/pattern-dark.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 }
