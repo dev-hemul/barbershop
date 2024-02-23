@@ -19,8 +19,8 @@
         <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="news.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+            <li><a href="#" class="current">Прайс-лист</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -93,7 +93,7 @@
         <p class="footer-contacts">
             Барбершопа «Бородинский» <br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
-            <a href="#">Как нас найти?</a> <br>
+            <a class="map modal-map-footer" href="#">Как нас найти?</a> <br>
             Телефон: +7 (812) 666-02-66
         </p>
 
@@ -137,9 +137,9 @@
     </div>
 </footer>
 
-<section class="modal modal-login">
+<section class="modal modal-login modal-error">
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль</p>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
             <label class="visually-hidden" for="user-login"></label>
@@ -149,10 +149,13 @@
             <label class="visually-hidden" for="user-password"></label>
             <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
-        <p class="login-password-info">
-            <label class="checkbox">
-                <input type="checkbox" name="remember">
-                Запомните меня</label>
+        <p class="login-help">
+            <label class="login-checkbox">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
     </form>
@@ -168,5 +171,7 @@
     <button class="modal-close" type="button">Закрыть</button>
 </section>
 <script src="js/script.js"></script>
+<script src="js/script-footer-map.js"></script>
+
 </body>
 </html>
